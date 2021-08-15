@@ -1,19 +1,41 @@
 
-
 .overall-container { 
     border: 1px solid green;
 }
 
 header {
+    height: 3r;
     border: 1px solid purple;
 }
 
+header .nav-flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .nav-flex-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    text-decoration: none;
+    border: 1px solid yellow;
+}
+
 .introduction-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
+    height: 20rem;
 }
 
 .portfolio-section {
     border: 1px solid blue;
+    height: auto
 }
 
 .contact-section {
