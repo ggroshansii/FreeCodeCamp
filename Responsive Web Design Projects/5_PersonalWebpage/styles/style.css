@@ -1,0 +1,21 @@
+
+
+.overall-container { 
+    border: 1px solid green;
+}
+
+header {
+    border: 1px solid purple;
+}
+
+.introduction-section {
+    border: 1px solid red;
+}
+
+.portfolio-section {
+    border: 1px solid blue;
+}
+
+.contact-section {
+    border: 1px solid pink;
+}
