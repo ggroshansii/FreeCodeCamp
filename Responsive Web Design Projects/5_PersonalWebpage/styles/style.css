@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .overall-container { 
     border: 1px solid green;
@@ -6,6 +7,7 @@
 header {
     height: 3r;
     border: 1px solid purple;
+    background-color: #333;
 }
 
 header .nav-flex-container {
@@ -17,13 +19,18 @@ header .nav-flex-container a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     padding: 0rem 0.5rem;
     height: 3rem;
-    width: 3rem;
+    width: 3.5rem;
     text-decoration: none;
     border: 1px solid yellow;
 }
 
+header .nav-flex-container a:hover {
+    background-color: rgb(228, 228, 228);
+    color: #333;
+}
 .introduction-section {
     display: flex;
     flex-direction: column;
