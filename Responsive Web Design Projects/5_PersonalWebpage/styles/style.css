@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lobster&display=swap');
+
+
+body {
+    font-family: Lobster;
+    border-radius: 1rem;
+}
+
 
 .overall-container { 
     border: 1px solid green;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.5rem 1rem;
 }
 
 header {
-    height: 3r;
-    border: 1px solid purple;
-    background-color: #333;
+    height: 3rem;
+    background-color: rgb(37, 37, 37);
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+
 }
 
 header .nav-flex-container {
     display: flex;
     justify-content: flex-end;
+
 }
 
 header .nav-flex-container a {
@@ -22,9 +36,8 @@ header .nav-flex-container a {
     color: white;
     padding: 0rem 0.5rem;
     height: 3rem;
-    width: 3.5rem;
+    width: 4rem;
     text-decoration: none;
-    border: 1px solid yellow;
 }
 
 header .nav-flex-container a:hover {
@@ -32,17 +45,76 @@ header .nav-flex-container a:hover {
     color: #333;
 }
 .introduction-section {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+
+    color: white;
     height: 20rem;
+}
+
+.intro-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    width: 40%;
+    height: 50%;
+    background-color:rgb(37, 37, 37);
+    font-family: inconsolata;
+}
+
+.intro-box-container h1 {
+    padding-bottom: 0.5rem;
+}
+
+.intro-box-container h2 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.icon-container {
+    display: grid;
+    grid-gap: 0.4rem;
+    grid-template-columns: 2.8rem 2.8rem 2.8rem;
+    grid-template-rows: 2.2rem 2.2rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 5rem;
+    width: 50%;
+    margin-top: 1.2rem;
+}
+
+.icon-container i {
+    font-size: 2rem;
 }
 
 .portfolio-section {
     border: 1px solid blue;
-    height: auto
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-item {
+    height: 12rem;
+    width: 8rem;
+    border: 1px solid grey;
+    border-radius: 0.3rem;
+    margin: 1rem;
 }
 
 .contact-section {
